@@ -1,6 +1,6 @@
 /*
- Theme Name:   WorkWeb Child Theme
- Description:  Child theme for workweb base
+ Theme Name:   WorkWeb Child Theme - KASAN
+ Description:  Child theme for workweb base for KASAN
  Author:       Working Websites
  Author URI:   http://workingwebsites.ca
  Template:     workweb_base
@@ -8,3 +8,11 @@
  License:      Copyright 2019 
  Text Domain:  workwebchild
 */
+.top-bar {
+  background: #8dab25;
+  border-bottom: 1px solid #c4d899;
+}
+
+.test{
+    background: #8dab25;
+}
