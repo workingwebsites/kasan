@@ -35,23 +35,14 @@
 		<header class="site-header" role="banner">
 			<div class="row top-bar">&nbsp;</div>
 			<div id="masthead" class="row">
-				<div class="col-md-7">
+				<div class="col-md-3">
 					<?php get_template_part('components/header/header', 'image'); ?>
 				</div>
 
-				<aside id="topbar-right" class="col-md-5" role="complementary">
-					<?php if (is_active_sidebar('topbar-right')) { ?>
-						<?php dynamic_sidebar('topbar-right'); ?>
-					<?php }	?>
-				</aside>
+				<div id="navigation" class="col-md-9">
+					<?php get_template_part('components/navigation/navigation', 'top'); ?>
+				</div>
 			</div>
-
-			<div id="navigation" class="row">
-				<?php get_template_part('components/navigation/navigation', 'top'); ?>
-			</div>
-
-			<div class="row"><?php custom_breadcrumbs(); ?></div>
-
 
 		</header>
 

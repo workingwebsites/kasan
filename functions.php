@@ -52,3 +52,6 @@ function workweb_base_sidebar_class()
 {
     echo     "col-md-4 col-lg-3";
 }
+
+//add_filter('wp_nav_menu_items', 'add_last_nav_item', 10, 2);
+remove_filter( 'wp_nav_menu_items', 'add_last_nav_item', 10, 2);

@@ -8,11 +8,54 @@
  License:      Copyright 2019 
  Text Domain:  workwebchild
 */
+
+@font-face {
+  font-family: "PTSans";
+  src: url(assets/fonts/PT_Sans/PTSans-Regular.ttf);
+}
+
 .top-bar {
   background: #8dab25;
   border-bottom: 1px solid #c4d899;
 }
 
-.test{
-    background: #8dab25;
+#masthead {
+  /* background: none; */
+  padding-top: 0.75rem;
+  background: #d6e4b7;
+  border-bottom: 1px solid #8dab25;
+  padding-bottom: 0.75rem;
+}
+
+.site-logo {
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+#navigation {
+  background: none;
+  font-size: 1rem;
+  font-family: PTSans;
+  padding-top: 1rem;
+  font-size: 1rem;
+}
+
+li.current_page_item > a {
+  color: #ed6708 !important;
+  outline: 0;
+}
+
+li.menu-item > a {
+  color: #292c21;
+  text-decoration: none;
+}
+
+li.menu-item > a:hover {
+  color: #ed6708;
+  text-decoration: none;
+}
+
+#content {
+  background: #dae4c6;
+  padding-top: 1rem;
 }
