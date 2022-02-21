@@ -45,12 +45,12 @@ setwwbFeatures();
  */
 function workweb_base_primary_sidebar_class()
 {
-    echo     "col-md-8 col-lg-7 col-lg-offset-1";
+    echo     "col-md-9 col-lg-8 col-lg-offset-1";
 }
 
 function workweb_base_sidebar_class()
 {
-    echo     "col-md-4 col-lg-3";
+    echo     "col-md-3 col-lg-4";
 }
 
 //add_filter('wp_nav_menu_items', 'add_last_nav_item', 10, 2);
