@@ -14,22 +14,35 @@
   src: url(assets/fonts/PT_Sans/PTSans-Regular.ttf);
 }
 
+:root {
+  --body-background: #dae4c6;
+  --top-bar: #8dab25;
+
+  --menu-link: #ed6708;
+}
+
+body {
+  /* So doesn't get over-riddent by customizer */
+  background: var(--body-background) !important;
+}
+
 .top-bar {
-  background: #8dab25;
+  background: var(--top-bar);
   border-bottom: 1px solid #c4d899;
 }
 
 #masthead {
-  /* background: none; */
   padding-top: 0.75rem;
   background: #d6e4b7;
-  border-bottom: 1px solid #8dab25;
+  border-bottom: 1px solid var(--top-bar);
   padding-bottom: 0.75rem;
 }
 
 .site-logo {
   text-align: center;
   font-size: 0.75rem;
+  font-weight: bold;
+  line-height: 1rem;
 }
 
 #navigation {
@@ -37,11 +50,11 @@
   font-size: 1rem;
   font-family: PTSans;
   padding-top: 1rem;
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 
 li.current_page_item > a {
-  color: #ed6708 !important;
+  color: var(--menu-link) !important;
   outline: 0;
 }
 
@@ -51,11 +64,22 @@ li.menu-item > a {
 }
 
 li.menu-item > a:hover {
-  color: #ed6708;
+  color: var(--menu-link);
   text-decoration: none;
 }
 
 #content {
-  background: #dae4c6;
   padding-top: 1rem;
+}
+
+.site-footer,
+.site-colophon {
+  background-color: #505b71;
+  color: var(--body-background);
+  padding-bottom: 1em;
+}
+
+.site-footer a,
+.site-colophon a {
+  color: #ccca98;
 }

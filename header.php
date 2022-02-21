@@ -24,8 +24,8 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class('test'); ?>>
-	<div id="page" class="site container-fluid">
+<body <?php body_class(); ?>>
+	<div id="page" class="site container-fluid d-flex flex-column min-vh-100">
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'workweb_base'); ?></a>
 		<?php if ($GLOBALS['wwbFeatures']['modal'] == true) {
 		?>
@@ -45,5 +45,4 @@
 			</div>
 
 		</header>
-
-		<div id="content" class="site-content row">
+		<div id="content" class="row site-content">
