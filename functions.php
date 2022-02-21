@@ -12,16 +12,16 @@
  */
 function setwwbFeatures()
 {
-    $GLOBALS['wwbFeatures']['header_image'] = true;
+    $GLOBALS['wwbFeatures']['header_image'] = false;
     $GLOBALS['wwbFeatures']['home_box'] = true;
-    $GLOBALS['wwbFeatures']['slider'] = true;
-    $GLOBALS['wwbFeatures']['portfolio'] = true;
-    $GLOBALS['wwbFeatures']['video'] = true;
-    $GLOBALS['wwbFeatures']['featured_products'] = true;
-    $GLOBALS['wwbFeatures']['testimony'] = true;
-    $GLOBALS['wwbFeatures']['featured_page'] = true;
-    $GLOBALS['wwbFeatures']['featured_pages'] = true;
-    $GLOBALS['wwbFeatures']['modal'] = true;
+    $GLOBALS['wwbFeatures']['slider'] = false;
+    $GLOBALS['wwbFeatures']['portfolio'] = false;
+    $GLOBALS['wwbFeatures']['video'] = false;
+    $GLOBALS['wwbFeatures']['featured_products'] = false;
+    $GLOBALS['wwbFeatures']['testimony'] = false;
+    $GLOBALS['wwbFeatures']['featured_page'] = false;
+    $GLOBALS['wwbFeatures']['featured_pages'] = false;
+    $GLOBALS['wwbFeatures']['modal'] = false;
 
     //What should the 'more' link say?
     $GLOBALS['wwbVars']['more'] = 'more';
@@ -45,7 +45,7 @@ setwwbFeatures();
  */
 function workweb_base_primary_sidebar_class()
 {
-    echo     "col-md-9 col-lg-8 col-lg-offset-1";
+    echo     "col-md-9 col-lg-8";
 }
 
 function workweb_base_sidebar_class()
@@ -53,4 +53,4 @@ function workweb_base_sidebar_class()
     echo     "col-md-3 col-lg-4";
 }
 
-remove_filter( 'wp_nav_menu_items', 'add_last_nav_item', 10, 2);
+remove_filter('wp_nav_menu_items', 'add_last_nav_item', 10, 2);
