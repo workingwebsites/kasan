@@ -16,14 +16,14 @@ else :
 
 	<div id="primary" class="content-area <?php workweb_base_primary_class() ?>">
 		<!-- HEADER IMAGE AND ABOUT US -->
-		<div id="fp_toprow" class="row">
+		<div id="fp_toprow" class="row2">
 			<!-- HOME BOXES -->
 			<?php if ($GLOBALS['wwbFeatures']['home_box'] == true) { ?>
 				<h1>Home Boxes</h1>
 				<div id="fp_main_one" class="row">
 					<?php get_template_part('inc/home-boxes/template/homebox', 'frontpage'); ?>
 					<div id="homebox_4" class="col-md-3 homebox_container">
-						<?php get_template_part('components/features/posts', 'latest'); ?>
+						<?php get_template_part('components/features/posts', 'homebox'); ?>
 					</div>
 				</div>
 				<hr />
