@@ -19,11 +19,19 @@
   --top-bar: #8dab25;
 
   --menu-link: #ed6708;
+  --bulletin-board: #d1bb80;
 }
 
 body {
   /* So doesn't get over-riddent by customizer */
   background: var(--body-background) !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .top-bar {
@@ -70,11 +78,95 @@ li.menu-item > a:hover {
 
 #content {
   padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.homebox {
+  background: #6c914e;
+  height: 100%;
+  --homebox-border-color: #67894b;
+  border-bottom: 0.75em solid var(--homebox-border-color);
+}
+.homebox_text {
+  border-top: 0.75em solid var(--homebox-border-color);
+  padding: 0.5em;
+  font-size: 0.95em;
+  line-height: 1.15em;
+}
+.homebox a {
+  text-decoration: none;
+  color: #ced5a9;
+}
+.homebox h2 {
+  color: #f0ffa0;
+  font-weight: bold;
+}
+.homebox_image img {
+  height: 195px;
+  width: auto;
+}
+.homebox_image {
+  text-align: center;
+  background: var(--body-background);
+}
+.homebox_title {
+  padding-top: 0.5em;
+}
+.homebox_link {
+  text-align: right;
+  padding-right: 2em;
+}
+a.homebox_link_a.btn {
+  background-color: #92b991;
+  border: 1px solid #6a8d69;
+  color: #2c3b2b;
+  font-size: 0.75em;
+  padding: 3px 6px;
+}
+.homebox_meta {
+  font-size: 0.75em;
+  font-style: italic;
+  margin-bottom: 0.75em;
+  margin-top: 0.75em;
+}
+
+.bulletin-board {
+  background-color: var(--bulletin-board);
+  font-size: 0.9em;
+  border: 1em solid #b5a371;
+}
+
+.bulletin-board h1 {
+  font-family: PTSans;
+}
+
+.bulletin-board section > ul.wp-block-latest-posts.wp-block-latest-posts__list {
+  list-style: disc;
+  padding-left: 0;
+  margin-left: 2em;
+}
+
+.bulletin-board li a {
+  color: #000000;
+  font-family: PTSans;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.bulletin-board li a:hover {
+  color: var(--menu-link);
+  text-decoration: underline;
+}
+
+.bulletin-board .wp-block-latest-posts__post-excerpt {
+  font-size: 0.9em;
+  line-height: 1em;
+  margin-top: 0.25em;
 }
 
 .site-footer,
 .site-colophon {
-  background-color: #505b71;
+  background-color: #6c918b;
   color: var(--body-background);
   padding-bottom: 1em;
 }

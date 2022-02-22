@@ -50,7 +50,7 @@ function workweb_base_primary_sidebar_class()
 
 function workweb_base_sidebar_class()
 {
-    echo     "col-md-3 col-lg-4";
+    echo     "col-md-3 col-lg-4 bulletin-board";
 }
 
 remove_filter('wp_nav_menu_items', 'add_last_nav_item', 10, 2);
