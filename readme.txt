@@ -1,4 +1,8 @@
-This is a starter for creating a child theme.
+This is a starter for creating a child theme from workweb_base:
+https://github.com/workingwebsites/workweb_base
+
+Options include:
+
 
 To Set Up:
 
