@@ -5,9 +5,10 @@
 $arg_short = array(
 	'theme_location' => 'short-top-menu',
 	'depth' => 1,
-	'menu_class' => "navbar-nav",
+	'menu_class' => "navbar-nav row",
 	'container' => 'ul',
-	'container_class' => "container_class"
+	'container_class' => "container_class",
+	'add_li_class'  => 'col-2',
 );
 
 $arg_long = array(

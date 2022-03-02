@@ -76,6 +76,13 @@ li.menu-item > a:hover {
   text-decoration: none;
 }
 
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 0;
+  line-height: 1.15em;
+}
+
 #content {
   padding-top: 1rem;
   padding-bottom: 1rem;
