@@ -30,7 +30,8 @@ function setwwbFeatures()
     $GLOBALS['wwbVars']['stylecache'] = wp_get_theme()->get('Version');
 
     //Home Box settings: How many boxes?
-    $GLOBALS['wwbVars']['homebox_num'] = 4;
+    //Only 3 Home Boxes, the '4th' is actually latest post
+    $GLOBALS['wwbVars']['homebox_num'] = 3;
 
     //Featured Pages settings: How many pages?
     $GLOBALS['wwbVars']['featuredpages_num'] = 1;
