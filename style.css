@@ -138,7 +138,9 @@ a.homebox_link_a.btn {
   margin-top: 0.75em;
 }
 
-.entry-meta {
+.entry-meta,
+.cat-links,
+.tags-links {
   font-size: 0.75em;
   font-style: italic;
 }
@@ -147,6 +149,12 @@ nav.navigation.post-navigation a {
   margin-top: 1em;
   font-size: 0.75em;
   font-family: PTSans;
+}
+
+.cat-links,
+.tags-links,
+.edit-link {
+  display: block;
 }
 
 .btn-link {
