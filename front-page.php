@@ -39,8 +39,10 @@ else :
 				</div>
 
 				<!-- HOME MIDDLE RIGHT BAR -->
-				<div id="home-middle-right" class="bulletin-board widget-area col-lg-4 col-xl-3" role="complementary">
-					<h1>Bulletin Board</h1>
+				<div id="home-middle-right" class="widget-area col-lg-4 col-xl-3" role="complementary">
+					<?php if (is_active_sidebar('bulletin-board')) { ?>
+						<?php dynamic_sidebar('bulletin-board'); ?>
+					<?php }	?>
 					<?php if (is_active_sidebar('home-middle-right')) { ?>
 						<?php dynamic_sidebar('home-middle-right'); ?>
 					<?php }	?>

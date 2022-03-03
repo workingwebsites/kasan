@@ -51,8 +51,19 @@ function workweb_base_primary_sidebar_class()
 
 function workweb_base_sidebar_class()
 {
-    echo     "col-md-3 col-lg-4 bulletin-board";
+    echo     "col-md-3 col-lg-4";
 }
+
+//Sidebar Home Middle Right
+register_sidebar(array(
+    'name'          => esc_html__('Bulletin Board', 'workweb_base'),
+    'id'            => 'bulletin-board',
+    'description'   => 'Bulletin board on all pages.',
+    'before_widget' => '<section id="%1$s" class="widget bulletin-board %2$s"><h2>Bulletin Board</h2>',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h2 class="widget-title">',
+    'after_title'   => '</h2>',
+));
 
 //No 'more' on last menu item
 remove_filter('wp_nav_menu_items', 'add_last_nav_item', 10, 2);
