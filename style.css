@@ -137,6 +137,11 @@ a.homebox_link_a.btn {
   margin-top: 0.75em;
 }
 
+.entry-meta {
+  font-size: 0.75em;
+  font-style: italic;
+}
+
 .bulletin-board {
   background-color: var(--bulletin-board);
   font-size: 0.9em;
