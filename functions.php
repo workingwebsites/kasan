@@ -69,7 +69,7 @@ register_sidebar(array(
 remove_filter('wp_nav_menu_items', 'add_last_nav_item', 10, 2);
 
 
-//Menu items add class
+//Menu items add class "add_li_class"
 function add_additional_class_on_li($classes, $item, $args)
 {
     if (isset($args->add_li_class)) {
