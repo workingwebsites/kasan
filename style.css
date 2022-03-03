@@ -177,13 +177,16 @@ a.btn-link {
   background-color: var(--bulletin-board);
   font-size: 0.9em;
   border: 1em solid #b5a371;
+  padding: 0.5em;
 }
 
-.bulletin-board h1 {
+.bulletin-board h1,
+.bulletin-board h2,
+.bulletin-board h3 {
   font-family: PTSans;
 }
 
-.bulletin-board section > ul.wp-block-latest-posts.wp-block-latest-posts__list {
+.bulletin-board ul.wp-block-latest-posts.wp-block-latest-posts__list {
   list-style: disc;
   padding-left: 0;
   margin-left: 2em;
