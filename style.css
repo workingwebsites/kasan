@@ -157,6 +157,10 @@ nav.navigation.post-navigation a {
   display: block;
 }
 
+.edit-link{
+  margin: 1rem;
+}
+
 .btn-link {
   color: var(--button-link);
   border: 1px solid var(--button-link);
