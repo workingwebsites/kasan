@@ -54,13 +54,26 @@ function workweb_base_sidebar_class()
     echo     "col-md-3 col-lg-4 bulletin-board";
 }
 
+//No 'more' on last menu item
 remove_filter('wp_nav_menu_items', 'add_last_nav_item', 10, 2);
 
-function add_additional_class_on_li($classes, $item, $args) {
-    if(isset($args->add_li_class)) {
+
+//Menu items add class
+function add_additional_class_on_li($classes, $item, $args)
+{
+    if (isset($args->add_li_class)) {
         $classes[] = $args->add_li_class;
     }
     return $classes;
 }
 add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
 
+
+//Next and previous posts are bootstrap buttons
+function add_class_next_post_link($html)
+{
+    $html = str_replace('<a', '<a class="btn btn-link btn-sm"', $html);
+    return $html;
+}
+add_filter('previous_post_link', 'add_class_next_post_link', 10, 1);
+add_filter('next_post_link', 'add_class_next_post_link', 10, 1);

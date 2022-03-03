@@ -19,6 +19,7 @@
   --top-bar: #8dab25;
 
   --menu-link: #ed6708;
+  --button-link: #a74d0c;
   --bulletin-board: #d1bb80;
 }
 
@@ -140,6 +141,28 @@ a.homebox_link_a.btn {
 .entry-meta {
   font-size: 0.75em;
   font-style: italic;
+}
+
+nav.navigation.post-navigation a {
+  margin-top: 1em;
+  font-size: 0.75em;
+  font-family: PTSans;
+}
+
+.btn-link {
+  color: var(--button-link);
+  border: 1px solid var(--button-link);
+}
+
+a.btn-link {
+  color: var(--button-link);
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  color: #fff;
+  background-color: var(--menu-link);
+  border-color: var(--button-link);
 }
 
 .bulletin-board {
