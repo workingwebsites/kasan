@@ -157,7 +157,7 @@ nav.navigation.post-navigation a {
   display: block;
 }
 
-.edit-link{
+.edit-link {
   margin: 1rem;
 }
 
@@ -212,6 +212,19 @@ a.btn-link {
   font-size: 0.9em;
   line-height: 1em;
   margin-top: 0.25em;
+}
+
+h2.entry-title a {
+  color: var(--menu-link);
+  text-decoration: none;
+  font-weight: bold;
+  font-family: PTSans;
+}
+
+.archive-post {
+  border-bottom: 2px solid var(--bulletin-board);
+  margin-bottom: 1em;
+  padding-left: 1em;
 }
 
 .site-footer,
