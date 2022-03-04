@@ -7,7 +7,7 @@ if (has_custom_logo()) { ?>
 		<div class="header-wrapper">
 			<div class="site-branding row">
 				<div class="site-logo col">
-					<a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php wws_get_custom_logo() ?></a>
+					<a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php wws_get_custom_logo('full') ?></a>
 					<br>
 					<?php bloginfo('description'); ?>
 

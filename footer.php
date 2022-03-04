@@ -15,7 +15,7 @@
 </div><!-- END site-content row  FROM HEADER -->
 <footer id="footer-widgets" class="site-footer row mt-auto" role="contentinfo">
 	<div class="col-2">
-		<?php wws_get_custom_logo() ?>
+		<?php wws_get_custom_logo('full') ?>
 	</div>
 	<div class="col-10">
 		<div class="row">
